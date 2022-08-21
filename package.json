@@ -1,0 +1,20 @@
+{
+  "name": "cypress-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open --e2e --browser chrome",
+    "cypress:run:regression": "npx cypress run --e2e --browser chrome --headed --env grepTags=@regression",
+    "cypress:run:smoke": "npx cypress run --e2e --browser chrome --headed --env grepTags=@smoke"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^10.4.0"
+  },
+  "devDependencies": {
+    "cypress-grep": "^3.0.2"
+  }
+}
